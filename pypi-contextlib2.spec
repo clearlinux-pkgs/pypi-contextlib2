@@ -17,13 +17,13 @@ BuildRequires : buildreq-distutils3
 Provides: contextlib2
 Provides: contextlib2-python
 Provides: contextlib2-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pytest
 BuildRequires : python3
 BuildRequires : six
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 .. image:: https://jazzband.co/static/img/badge.svg
