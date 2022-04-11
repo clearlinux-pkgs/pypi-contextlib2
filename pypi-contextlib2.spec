@@ -4,7 +4,7 @@
 #
 Name     : pypi-contextlib2
 Version  : 21.6.0
-Release  : 77
+Release  : 78
 URL      : https://files.pythonhosted.org/packages/c7/13/37ea7805ae3057992e96ecb1cffa2fa35c2ef4498543b846f90dd2348d8f/contextlib2-21.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c7/13/37ea7805ae3057992e96ecb1cffa2fa35c2ef4498543b846f90dd2348d8f/contextlib2-21.6.0.tar.gz
 Summary  : Backports and enhancements for the contextlib module
@@ -14,16 +14,13 @@ Requires: pypi-contextlib2-license = %{version}-%{release}
 Requires: pypi-contextlib2-python = %{version}-%{release}
 Requires: pypi-contextlib2-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: contextlib2
-Provides: contextlib2-python
-Provides: contextlib2-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
-BuildRequires : pytest
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 BuildRequires : python3
 BuildRequires : six
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
 
 %description
 .. image:: https://jazzband.co/static/img/badge.svg
@@ -66,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641424852
+export SOURCE_DATE_EPOCH=1649694165
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
